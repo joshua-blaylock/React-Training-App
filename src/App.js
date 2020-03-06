@@ -11,8 +11,10 @@ function App() {
     <>
       <BrowserRouter>
         <Navbar />
-        <Route path="/" exact component={Home}/>
-        <Route path="/shows" component={Shows}/>
+        <div class="container">
+          <Route path="/" exact component={Home}/>
+          <Route path="/shows" component={Shows}/>
+        </div>
       </BrowserRouter>
     </>
   );
